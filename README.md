@@ -71,14 +71,15 @@ Node.js is required for the static asset pipeline. If you don't already have it,
 
 ```
 brew install node
-curl https://npmjs.org/install.sh | sh
+curl -k -O -L https://npmjs.org/install.sh
 ```
 
 Then bootstrap the project:
 
 ```
-cd books14
-mkvirtualenv --no-site-packages books14
+git clone https://github.com/nprapps/books15.git
+cd books15
+mkvirtualenv --no-site-packages books15
 pip install -r requirements.txt
 npm install
 fab update
@@ -275,7 +276,7 @@ Compile static assets
 Compile LESS to CSS, compile javascript templates to Javascript and minify all assets:
 
 ```
-workon books14
+workon books15
 fab render
 ```
 
