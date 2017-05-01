@@ -335,7 +335,7 @@ class Book(object):
         print 'LOG (%s): Getting links from %s' % (self.title, book_page_url)
         r = requests.get(book_page_url)
         soup = BeautifulSoup(r.content, 'html.parser')
-        items = soup.select('.storylist article')
+        items = soup.select('.storylist article.item')
         item_list = []
         urls = []
         for item in items:
