@@ -172,7 +172,7 @@ def get_secrets():
 def configure_targets(deployment_target):
     """
     Configure deployment targets. Abstracted so this can be
-    overriden for rendering before deployment.
+    overridden for rendering before deployment.
     """
     global S3_BUCKET
     global S3_BASE_URL
